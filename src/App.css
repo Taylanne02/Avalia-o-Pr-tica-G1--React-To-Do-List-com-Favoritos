@@ -1,0 +1,140 @@
+
+/* src/App.css */
+
+body {
+  background-color: #ffffff;
+}
+
+/* Em src/App.css */
+
+.app-container {
+  display: flex;
+  justify-content: flex-end; /* Alterado de 'center' para 'flex-end' para alinhar à direita */
+  align-items: flex-start;
+  gap: 3rem; 
+  padding: 2rem;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+/* Estilo Bloco de Notas */
+.notepad {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fefae0; /* Cor de papel amarelado */
+  color: #3a3a3a;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #d4a373;
+  display: flex;
+  flex-direction: column;
+}
+
+.notepad-header {
+  background-color: #d4a373; /* Faixa superior marrom */
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+.notepad-header h1 {
+  color: #ffffff; /*'Minhas tarefas'*/
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.notepad-body {
+  padding: 1.5rem;
+}
+
+/* Formulário de Tarefas */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-bottom-color: #eb7e11;
+}
+
+.input-group button {
+  background-color: #d4a373;
+  color: white; /*Botão 'adicionar'*/
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 9999px; 
+  }
+
+/* Lista de Tarefas */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px dashed #ccc;
+  cursor: pointer;
+  word-wrap: break-word; 
+}
+
+.task-list li:hover {
+  background-color: #f5eecf; /*Mouse por cima de concluido*/
+}
+
+/* Estilo da tarefa concluída */
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Estilo do Gráfico de Progresso */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000; /* Cor escura para combinar com o fundo */
+  padding: 1.5rem;
+  padding-top: 2rem;
+  background-color: #fefae0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #d4a373;
+}
+
+.chart-container h2 {
+  margin-bottom: 1rem;
+}
+
+.chart-container p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.gradient-title {
+  background-image: linear-gradient(to right, #d7ff55, #ff77d6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center; 
+  width: 100%; 
+}
+

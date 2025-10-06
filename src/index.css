@@ -1,0 +1,101 @@
+
+:root {
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.todo-container {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #ff898980;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.date-display {
+  text-align: center;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+}
+
+.input-group button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a34ec;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #535bf2; /*Sombra do botão*/
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 0.8rem;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-list li:hover {
+  background-color: #2a2a2a;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
