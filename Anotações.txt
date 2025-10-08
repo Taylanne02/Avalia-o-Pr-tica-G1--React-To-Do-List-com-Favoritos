@@ -1,0 +1,6 @@
+1- Pasta colocada fora do src (principal motivo por não funcionar, percebi durante o estudo. erro que apareceu durante a g1)
+2- importações feitas de forma errada
+3- falta de arquivos separados como taskitem
+4- falta do useStatus para definir o estado atual das tarefas
+5- falta do useEffect para definir quando a atividade for favoritada, indo para a aba de FvaoritesPage
+6- não divisão correta dos cards
